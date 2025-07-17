@@ -42,11 +42,7 @@ export default function DesktopHeader() {
     <header className="hidden lg:flex z-10 items-center justify-between mx-20 top-10 left-0 right-0 absolute font-baloo">
       {/* Logo */}
       <Link to="/">
-        <img
-          src="/src/assets/images/logo.svg"
-          className="w-[87px] h-14 object-contain"
-          alt="logo"
-        />
+        <img src="@/assets/images/logo.svg" className="w-[87px] h-14 object-contain" alt="logo" />
       </Link>
 
       {/* Navigation Links */}
