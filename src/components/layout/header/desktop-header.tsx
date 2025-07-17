@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import i18n from "@/lib/utils/i18n";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
-
+import logo from "@/assets/images/logo.svg";
 export default function DesktopHeader() {
   //Translation
   const { t } = useTranslation();
@@ -42,7 +42,7 @@ export default function DesktopHeader() {
     <header className="hidden lg:flex z-10 items-center justify-between mx-20 top-10 left-0 right-0 absolute font-baloo">
       {/* Logo */}
       <Link to="/">
-        <img src="@/assets/images/logo.svg" className="w-[87px] h-14 object-contain" alt="logo" />
+        <img src={logo} className="w-[87px] h-14 object-contain" alt="logo" />
       </Link>
 
       {/* Navigation Links */}
