@@ -14,6 +14,7 @@ import axios from "axios";
 import { useState, type FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
+import robot from "@/assets/images/ChatAi/robot.png";
 
 export default function ChatAi() {
   // Translation
@@ -102,7 +103,7 @@ export default function ChatAi() {
         <div className="fixed bottom-5 right-5 flex flex-col items-center hover:cursor-pointer z-10  ">
           <img
             className=" before:content-[''] before:absolute before:w-full before:h-full before:bg-flame "
-            src="src\assets\images/ChatAi/robot.png"
+            src={robot}
             width={150}
             alt="robot"
           />

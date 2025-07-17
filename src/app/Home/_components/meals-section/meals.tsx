@@ -3,7 +3,8 @@ import ArrowIconRight from "@/components/common/right-arrow-icon/ArrowIconRight"
 import ScrollAnimationBox from "@/components/common/scroll-animation-box";
 import AnnouncementBar from "@/components/features/announcement-bar";
 import { useTranslation } from "react-i18next";
-
+import Healthy from "@/assets/images/meals/Healthy.svg";
+import Dumble from "@/assets/images/meals/Dumble.svg";
 export default function MealsSection() {
   // Initialize translation function
   const { t } = useTranslation();
@@ -13,9 +14,9 @@ export default function MealsSection() {
       <div className=" relative   bg-meal-bg-img bg-cover bg-center flex flex-col items-center ">
         <div className=" before:content-[''] before:absolute before:w-full before:h-[414px] before:backdrop-blur-[86px] before:bg-[#FFFFFF99]  before:top-10 before:left-0"></div>
         <ScrollAnimationBox>
-          <img src="/src/assets/images/meals/Healthy.svg" className="mt-3" alt="Healthy" />
+          <img src={Healthy} className="mt-3" alt="Healthy" />
           <span className="flex relative items-center z-40  justify-center gap-2">
-            <img src="/src/assets/images/meals/Dumble.svg" alt="Dumble" />
+            <img src={Dumble} alt="Dumble" />
             <p className="text-flame text-md font-baloo">{t("healthy-nutritions")}</p>
           </span>
         </ScrollAnimationBox>
